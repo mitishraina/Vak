@@ -5,6 +5,8 @@ class LoraConfig:
     LORA_TARGET_MODULES = ["q_proj", "k_proj", "v_proj", "o_proj"]
     USE_NESTED_QUANT=True
     BNB_4BIT_COMPUTE_TYPE="bfloat16"
+    LOAD_IN_4BIT=True
+    BNB_4BIT_QUANT_TYPE="nf4"
     SEED=0
     
 config = LoraConfig()

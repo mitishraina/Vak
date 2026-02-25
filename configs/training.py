@@ -2,9 +2,7 @@ class TrainingConfig:
     MODEL="HuggingFaceTB/SmolLM-135M"
     DATASET="flytech/python-codes-25k"
     DATA_COLUMN="output"
-
     SEQ_LEN=512
-
     MAX_STEPS=2000
     BATCH_SIZE=16
     GR_ACC_STEPS=1
@@ -18,6 +16,7 @@ class TrainingConfig:
     OUTPUT_DIR="./output"
     BF16=True
     FP16=False
+    NUM_TRAIN_EPOCHS=3
 
     FIM_RATE=0.0
     FIM_SPM_RATE=0.0
